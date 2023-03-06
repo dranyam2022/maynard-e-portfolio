@@ -1,17 +1,20 @@
 const cards = document.querySelectorAll(".card");
 
 function scrollHandler() {
-  let innerHeight = window.innerHeight;
-  let rectTop = cards[3].getBoundingClientRect().top;
-  if (rectTop <= 500) {
-    cards[3].style.opacity = 1;
-    cards[2].style.transform = "translateY: 2rem";
-  } else {
-    cards[3].style.opacity = 0.2;
-  }
-  console.log(innerHeight, rectTop);
+  cards.forEach((card) => {
+    const rectTop = card.getBoundingClientRect().top;
+    const rectBottom = card.getBoundingClientRect().bottom;
+
+    if (window.innerHeight - 90 <= rectTop || rectBottom <= 20) {
+      card.style.opacity = "0.1";
+      card.style.marginTop = "5rem";
+    } else {
+      card.style.opacity = "1";
+      card.style.marginTop = "2rem";
+    }
+  });
 }
 
-window.addEventListener("scroll", scrollHandler);
 scrollHandler();
-//if window.innerheight -  elem rect top <=
+
+window.addEventListener("scroll", scrollHandler);
