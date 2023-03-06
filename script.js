@@ -1,6 +1,8 @@
 const cards = document.querySelectorAll(".card");
+const navBtn = document.querySelector(".nav__btn");
+const navLinks = document.querySelector(".nav__links");
 
-function scrollHandler() {
+function scrollWindowHandler() {
   cards.forEach((card) => {
     const rectTop = card.getBoundingClientRect().top;
     const rectBottom = card.getBoundingClientRect().bottom;
@@ -15,6 +17,9 @@ function scrollHandler() {
   });
 }
 
-scrollHandler();
+window.addEventListener("scroll", scrollWindowHandler);
+/* init scrollWindowHandler */
+scrollWindowHandler();
 
-window.addEventListener("scroll", scrollHandler);
+/* navBtn click handler on mobile screen */
+navBtn.addEventListener("click", clickNavHandler);
