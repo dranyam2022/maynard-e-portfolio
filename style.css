@@ -130,22 +130,35 @@ body {
 
 /* card style */
 .card {
-  padding: 4rem;
   background-color: var(--light-accent);
   border-radius: 2rem;
   max-height: 50rem;
   overflow: hidden;
   width: 100%;
   margin-top: 2rem;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
   position: relative;
+}
+
+.card__bg--jokeTeller {
+  background: url("/assets/joke-teller-img.png");
+  background-size: 120rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__bg--jokeTeller:hover {
+  background-size: 130rem;
 }
 
 .card--bg {
   background: url("https://www.aboghanbari.com/static/defaultcard-hover-5eef4f0957217910c705b56db7539e0f.jpg");
-  background-size: cover;
+  background-size: 200%;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.card--bg:hover {
+  background-size: 250%;
 }
 
 .card--wide {
@@ -153,6 +166,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 4rem;
+}
+
+.card--full {
+  padding: 4rem;
 }
 
 .card--small {
@@ -162,8 +180,13 @@ body {
 
 .card--medium {
   max-width: 49%;
+  min-height: 50rem;
+}
 
-  /* change to max-width after adding content */
+.card--medium span {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .card__title {
@@ -239,7 +262,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 /* *********************************** */
 
 /* Animation styles */
@@ -250,7 +272,7 @@ body {
 }
 
 /* media queries for responsive layout */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 92%;
   }
@@ -277,15 +299,12 @@ body {
     height: 25rem;
   }
 
-  .card--small {
-    order: -1;
-  }
   .card__title {
     font-size: 3rem;
   }
   .contact {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .contact__btn {
     width: 100%;
@@ -293,10 +312,11 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 94.5%;
   }
+
   .card__text {
     margin-top: 2rem;
   }
