@@ -158,7 +158,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin-top: 2rem;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
   position: relative;
 }
 
@@ -228,6 +228,16 @@ body {
   font-style: italic;
   color: var(--primary);
   font-weight: bold;
+}
+
+.card--hidden {
+  opacity: 0.1;
+  margin-top: 5rem;
+}
+
+.card--show {
+  opacity: 1;
+  margin-top: 2rem;
 }
 
 /* contact styles */
