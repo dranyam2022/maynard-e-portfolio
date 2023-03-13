@@ -5,6 +5,7 @@ const navClose = document.querySelector(".fa-circle-xmark");
 const navOpen = document.querySelector(".fa-bars");
 const modal = document.querySelector(".modal");
 
+/* scroll handler */
 function scrollWindowHandler() {
   let trigBottom = (window.innerHeight / 5) * 4;
   let trigTop = window.innerHeight / 5;
@@ -18,8 +19,10 @@ function scrollWindowHandler() {
       card.classList.replace("card--hidden", "card--show");
     }
   });
+  console.log("Run");
 }
 
+/* scroll event listener */
 window.addEventListener("scroll", scrollWindowHandler);
 
 /* navBtn click handler on mobile screen */
@@ -41,4 +44,4 @@ window.addEventListener("resize", () => {
   setTimeout(scrollWindowHandler, 100);
 });
 
-scrollWindowHandler();
+window.onload = scrollWindowHandler;
