@@ -4,6 +4,11 @@ const navLinks = document.querySelector(".nav__links");
 const navClose = document.querySelector(".fa-circle-xmark");
 const navOpen = document.querySelector(".fa-bars");
 const modal = document.querySelector(".modal");
+const me = document.querySelector(".card--small");
+const thumbPrint = document.querySelector(".card__thumbprint");
+
+/* long press customer function */
+function longPress() {}
 
 /* scroll handler */
 function scrollWindowHandler() {
@@ -42,6 +47,10 @@ modal.addEventListener("click", clickNavHandler);
 
 window.addEventListener("resize", () => {
   setTimeout(scrollWindowHandler, 100);
+});
+
+me.addEventListener("click", () => {
+  thumbPrint.classList.toggle("card--showMe");
 });
 
 window.onload = scrollWindowHandler;
