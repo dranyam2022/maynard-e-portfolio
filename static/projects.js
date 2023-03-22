@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     href: "https://joke-teller-gray.vercel.app/",
     style: "card__bg--jokeTeller",
@@ -8,8 +8,8 @@ export const projects = [
     style: "card__bg--spock-rock",
   },
   {
-    href: "https://joke-teller-gray.vercel.app/",
-    style: "card__bg--jokeTeller",
+    href: "https://pong-rosy.vercel.app/",
+    style: "card__bg--pong-game",
   },
   {
     href: "https://joke-teller-gray.vercel.app/",
@@ -24,3 +24,5 @@ export const projects = [
     style: "card__bg--jokeTeller",
   },
 ];
+
+export { projects };
