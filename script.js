@@ -1,4 +1,30 @@
-const cards = document.querySelectorAll(".card");
+const projects = [
+  {
+    href: "https://joke-teller-gray.vercel.app/",
+    style: "card__bg--jokeTeller",
+  },
+  {
+    href: "https://spock-rock-game-murex.vercel.app/",
+    style: "card__bg--spock-rock",
+  },
+  {
+    href: "https://pong-rosy.vercel.app/",
+    style: "card__bg--pong-game",
+  },
+  {
+    href: "https://joke-teller-gray.vercel.app/",
+    style: "card__bg--jokeTeller",
+  },
+  {
+    href: "https://joke-teller-gray.vercel.app/",
+    style: "card__bg--jokeTeller",
+  },
+  {
+    href: "https://joke-teller-gray.vercel.app/",
+    style: "card__bg--jokeTeller",
+  },
+];
+
 const navBtn = document.querySelector(".nav__btn");
 const navLinks = document.querySelector(".nav__links");
 const navClose = document.querySelector(".fa-circle-xmark");
@@ -7,14 +33,29 @@ const modal = document.querySelector(".modal");
 const me = document.querySelector(".card--small");
 const thumbPrint = document.querySelector(".card__thumbprint");
 
-/* long press customer function */
-function longPress() {}
+// Generate the projects dynamically
+const projectsSection = document.querySelector(".projects");
+
+// create an div element for each project
+projects.forEach((project) => {
+  const div = document.createElement("div");
+  const a = document.createElement("a");
+  const span = document.createElement("span");
+  // append a to div and span to a
+  div.appendChild(a);
+  a.appendChild(span);
+  div.classList.add("card", "card--medium", project.style, "card--hidden");
+  a.setAttribute("target", "_blank");
+  a.setAttribute("href", project.href);
+  projectsSection.appendChild(div);
+});
 
 /* scroll handler */
 function scrollWindowHandler() {
+  const cards = document.querySelectorAll(".card");
   let trigBottom = (window.innerHeight / 5) * 4;
   let trigTop = window.innerHeight / 5;
-  cards.forEach((card, idx) => {
+  cards.forEach((card) => {
     const cardTop = card.getBoundingClientRect().top;
     const cardBottom = card.getBoundingClientRect().bottom;
 
