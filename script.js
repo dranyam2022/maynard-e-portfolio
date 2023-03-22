@@ -1,8 +1,6 @@
 import { projects } from "./static/projects.js";
 
 const navBtn = document.querySelector(".nav__btn");
-const navLinks = document.querySelector(".nav__links");
-const navClose = document.querySelector(".fa-circle-xmark");
 const navOpen = document.querySelector(".fa-bars");
 const modal = document.querySelector(".modal");
 const me = document.querySelector(".card--small");
