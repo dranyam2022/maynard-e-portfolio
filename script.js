@@ -17,7 +17,9 @@ projects.forEach((project) => {
   // append a to div and span to a
   div.appendChild(a);
   a.appendChild(span);
-  div.classList.add("card", "card--medium", project.style, "card--hidden");
+  div.classList.add("card", "card--medium", "projects", "card--hidden");
+  // change background image url
+  div.style.backgroundImage = `url(${project.url})`;
   a.setAttribute("target", "_blank");
   a.setAttribute("href", project.href);
   projectsSection.appendChild(div);

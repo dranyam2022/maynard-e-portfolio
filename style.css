@@ -165,48 +165,14 @@ body {
 }
 
 /* card bg modifier */
-.card__bg--jokeTeller {
-  background: url("/assets/joke-teller-img.png");
+.projects {
   background-size: 120rem;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.card__bg--jokeTeller:hover {
+.projects:hover {
   background-size: 130rem;
-}
-
-.card__bg--spock-rock {
-  background: url("./assets/rock-paper-scissors-lizard-spock.png");
-  background-size: 100rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.card__bg--spock-rock:hover {
-  background-size: 110rem;
-}
-
-.card__bg--pong-game {
-  background: url("./assets/pong-game.png");
-  background-size: 100rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.card__bg--pong-game:hover {
-  background-size: 110rem;
-}
-
-.card__bg--resort-booking {
-  background: url("./assets/resort-booking.png");
-  background-size: 100rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.card__bg--resort-booking:hover {
-  background-size: 110rem;
 }
 
 .card--bg {

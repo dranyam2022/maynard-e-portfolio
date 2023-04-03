@@ -1,19 +1,19 @@
 const projects = [
   {
     href: "https://joke-teller-gray.vercel.app/",
-    style: "card__bg--jokeTeller",
+    url: "../assets/joke-teller-img.png",
   },
   {
     href: "https://spock-rock-game-murex.vercel.app/",
-    style: "card__bg--spock-rock",
+    url: "../assets/rock-paper-scissors-lizard-spock.png",
   },
   {
     href: "https://pong-rosy.vercel.app/",
-    style: "card__bg--pong-game",
+    url: "../assets/pong-game.png",
   },
   {
     href: "https://resort-booking-swart.vercel.app/",
-    style: "card__bg--resort-booking",
+    url: "../assets/resort-booking.png",
   },
 ];
 
