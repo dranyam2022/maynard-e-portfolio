@@ -198,6 +198,17 @@ body {
   background-size: 110rem;
 }
 
+.card__bg--resort-booking {
+  background: url("./assets/resort-booking.png");
+  background-size: 100rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__bg--resort-booking:hover {
+  background-size: 110rem;
+}
+
 .card--bg {
   background: url("https://www.aboghanbari.com/static/defaultcard-hover-5eef4f0957217910c705b56db7539e0f.jpg");
   background-size: 200%;

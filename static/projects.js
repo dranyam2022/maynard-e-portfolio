@@ -12,16 +12,8 @@ const projects = [
     style: "card__bg--pong-game",
   },
   {
-    href: "https://joke-teller-gray.vercel.app/",
-    style: "card__bg--jokeTeller",
-  },
-  {
-    href: "https://joke-teller-gray.vercel.app/",
-    style: "card__bg--jokeTeller",
-  },
-  {
-    href: "https://joke-teller-gray.vercel.app/",
-    style: "card__bg--jokeTeller",
+    href: "https://resort-booking-swart.vercel.app/",
+    style: "card__bg--resort-booking",
   },
 ];
 
