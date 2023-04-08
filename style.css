@@ -200,7 +200,6 @@ body {
 
 .card--small {
   max-width: 33%;
-  flex-shrink: 2;
   background: url("./assets/me-image.png");
   background-position: left center;
   background-size: cover;
