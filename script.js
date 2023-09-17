@@ -13,10 +13,10 @@ const projectsSection = document.querySelector(".projects");
 projects.forEach((project) => {
   const div = document.createElement("div");
   const a = document.createElement("a");
-  const span = document.createElement("span");
+
   // append a to div and span to a
+
   div.appendChild(a);
-  a.appendChild(span);
   div.classList.add("card", "card--medium", "projects", "card--hidden");
   // change background image url
   div.style.backgroundImage = `url(${project.url})`;
